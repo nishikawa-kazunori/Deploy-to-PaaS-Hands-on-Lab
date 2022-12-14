@@ -75,3 +75,4 @@ jobs:
               --restart-policy never \
               --vnet $vnetId \
               --subnet $subnetId
+              
