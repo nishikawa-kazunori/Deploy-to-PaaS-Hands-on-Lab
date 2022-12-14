@@ -58,6 +58,27 @@
 					</excludes>
 				</configuration>
 			</plugin>
+			    <plugin>
+    <groupId>com.microsoft.azure</groupId>
+    <artifactId>azure-webapp-maven-plugin</artifactId>
+    <version>2.7.0</version>
+    <configuration>
+      <subscriptionId>c1a024e6-5a52-43dd-9201-bf3dae576d17</subscriptionId>
+      <resourceGroup>rg-cws-user02</resourceGroup>
+      <appName>nishikawa1214</appName>
+      <deployment>
+      <resources>
+        <resource>
+        <type>jar</type>
+        <directory>${project.basedir}/target</directory>
+        <includes>
+          <include>*.jar</include>
+        </includes>
+        </resource>
+      </resources>
+      </deployment>
+    </configuration>
+   </plugin>
 		</plugins>
 	</build>
 
